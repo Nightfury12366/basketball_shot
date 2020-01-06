@@ -8,6 +8,7 @@ criteria = (cv2.TERM_CRITERIA_MAX_ITER | cv2.TERM_CRITERIA_EPS, 30, 0.001)
 # 获取标定板角点的位置
 objp = np.zeros((4 * 6, 3), np.float32)
 objp[:, :2] = np.mgrid[0:6, 0:4].T.reshape(-1, 2)  # 将世界坐标系建在标定板上，所有点的Z坐标全部为0，所以只需要赋值x和y
+print(objp)
 
 obj_points = []  # 存储3D点
 img_points = []  # 存储2D点
@@ -46,8 +47,8 @@ ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(obj_points, img_points, size,
 print("ret:", ret)
 print("mtx:\n", mtx)  # 内参数矩阵
 print("dist:\n", dist)  # 畸变系数   distortion cofficients = (k_1,k_2,p_1,p_2,k_3)
-print("rvecs:\n", rvecs)  # 旋转向量  # 外参数  按照道理来说，有多少张图片就有多少个旋转向量
-print("tvecs:\n", tvecs)  # 平移向量  # 外参数  有多少张图片就有多少个平移向量
+# print("rvecs:\n", rvecs)  # 旋转向量  # 外参数  按照道理来说，有多少张图片就有多少个旋转向量
+# print("tvecs:\n", tvecs)  # 平移向量  # 外参数  有多少张图片就有多少个平移向量
 
 print("-----------------------------------------------------")
 
