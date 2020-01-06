@@ -1,54 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b60fccc7-6a18-4de6-892d-21244129baf4" name="Default Changelist" comment="">
+    <list default="true" id="b60fccc7-6a18-4de6-892d-21244129baf4" name="Default Changelist" comment="hahaha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cameraStad.py" beforeDir="false" afterPath="$PROJECT_DIR$/cameraStad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cameraTrans.py" beforeDir="false" afterPath="$PROJECT_DIR$/cameraTrans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image4/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/calibresult3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/calibresult3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image5/conimg9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image5/conimg9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image6/raw_tran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image6/raw_tran.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -252,8 +207,16 @@
       <workItem from="1578207408628" duration="3266000" />
       <workItem from="1578277267613" duration="2747000" />
       <workItem from="1578282716277" duration="723000" />
-      <workItem from="1578293784215" duration="8248000" />
+      <workItem from="1578293784215" duration="9488000" />
     </task>
+    <task id="LOCAL-00001" summary="hahaha">
+      <created>1578303017651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578303017651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +234,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hahaha" />
+    <option name="LAST_COMMIT_MESSAGE" value="hahaha" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CV_study$cameraTrans.coverage" NAME="cameraTrans Coverage Results" MODIFIED="1578301784092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
