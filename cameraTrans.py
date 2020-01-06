@@ -165,6 +165,27 @@ def draw_3D_line(points_3ds):
     plt.show()
 
 
+# 从txt中读取篮球坐标信息
+def read_txt():
+    F1 = open(r"C:\Users\64426\Desktop\ball_line\3 00_00_38-00_00_41.txt", "r")
+    List_row = F1.readlines()
+    list_source = []
+    list_target = []
+    for i in range(len(List_row)):
+        column_list = List_row[i].strip().split(",")  # 每一行split后是一个列表
+        list_source.append(column_list)  # 加入list_source
+    list_source = np.array(list_source, dtype=np.float)
+    # 从包围框中计算像素坐标
+    for row in list_source:
+        row_target = np.array([(row[0] + row[2]) / 2.0, (row[1] + row[3]) / 2.0], dtype=np.float)
+        if row_target.sum() != 0:
+            list_target.append(row_target)
+
+    list_target = np.array(list_target, dtype=np.float)
+
+    print(list_target)
+
+
 #  目前的主函数，我太难了
 def sky_start():
     # 四个2d坐标点，开始标定工作
@@ -172,9 +193,8 @@ def sky_start():
     imshow(im)
     # 原图中的4个点
     src_point = ginput(4)
-    # short_pointUV = ginput(1)
-    # short_pointUV = np.array(short_pointUV, dtype=np.double)
-    # print("short_pointUV: ", short_pointUV)
+    short_pointUV = np.array([262.51836095, 425.5510524], dtype=np.double)
+    print("\nshort_pointUV: ", short_pointUV, '\n')
     object_2d_point = np.array(src_point, dtype=np.double)
     Pp, camera_postion = solve_Pp_Matrix(object_2d_point)  # 求解反推出来的2D_to_3D矩阵以及相机位置
     h, s = cv2.findHomography(object_2d_point, dst_point, cv2.RANSAC, 10)  # 求解单应性变换矩阵
@@ -184,33 +204,35 @@ def sky_start():
     print("\n2D->3D矩阵：", Pp, '\n\n相机位置：', camera_postion, '\n')
 
     '''求Panel'''
-    # short_pointXY = cvt_pos(short_pointUV, h)  # 求解出俯视图像素坐标
-    # short_pointXY = pixelXY_to_worldXY(np.array(short_pointXY, dtype=np.double))  # 求解出俯视图世界坐标
-    # shot_point = [short_pointXY[0], short_pointXY[1], 0]
-    # print("shot_point:", shot_point)
-    # hoop = np.array([1.575, 0.0, 3.05])
-    # tripoint = np.array([1.575, 0.0, 0.0])
-    # panel = get_panel(shot_point, hoop, tripoint)
+    short_pointXY = cvt_pos(short_pointUV, h)  # 求解出俯视图像素坐标
+    short_pointXY = pixelXY_to_worldXY(np.array(short_pointXY, dtype=np.double))  # 求解出俯视图世界坐标
+    shot_point = [short_pointXY[0], short_pointXY[1], 0]
+    print("shot_point:", shot_point)
+    hoop = np.array([1.575, 0.0, 3.05])
+    tripoint = np.array([1.575, 0.0, 0.0])
+    panel = get_panel(shot_point, hoop, tripoint)
     '''求Panel'''
 
-    # point_3d_list = []
-    # with open('shot_line.pkl', 'rb') as in_data:
-    #     point_2d_list = pickle.load(in_data)
-    #
-    # print("篮球二维轨迹：", point_2d_list)
-    #
-    # for point_2d in point_2d_list:
-    #     # point_2d = [474, 177]
-    #     point_3d = solve_2D_2_3D(point_2d, Pp)
-    #     the_cross_point = cross_point_panel(point_3d, camera_postion, panel)
-    #     print("这个三维坐标点的估计(相交点估计)：", the_cross_point)
-    #     point_3d_list.append(the_cross_point)
-    #
-    # point_3d_list = np.array(point_3d_list)
-    # print("篮球三维轨迹：", point_3d_list)
-    # draw_3D_line(point_3d_list)
+    '''求轨迹'''
+    point_3d_list = []
+    with open('shot_line.pkl', 'rb') as in_data:
+        point_2d_list = pickle.load(in_data)
+
+    print("篮球二维轨迹：", point_2d_list)
+
+    for point_2d in point_2d_list:
+        # point_2d = [474, 177]
+        point_3d = solve_2D_2_3D(point_2d, Pp)
+        the_cross_point = cross_point_panel(point_3d, camera_postion, panel)
+        print("这个三维坐标点的估计(相交点估计)：", the_cross_point)
+        point_3d_list.append(the_cross_point)
+
+    point_3d_list = np.array(point_3d_list)
+    print("篮球三维轨迹：", point_3d_list)
+    draw_3D_line(point_3d_list)
+    '''求轨迹'''
 
 
 reFac_camera((1280, 720))
-print(camera_matrix)
+# print(camera_matrix)
 sky_start()

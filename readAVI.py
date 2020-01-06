@@ -1,5 +1,7 @@
 import cv2
 import os
+from PIL import Image
+from pylab import *
 
 # path = r'E:/mywork/6月/frame/'
 cap = cv2.VideoCapture('C:/Users/64426/Desktop/ball_line/单人投篮 00_00_34-00_00_37_out.avi')
@@ -15,8 +17,12 @@ if cap.isOpened():
     gray = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)  #
     # cv2.imwrote(' ',gray) #路径无中文存图
     cv2.imencode('.jpg', gray)[1].tofile('./image6/frame_' + str(i) + '.jpg')  # 路径含中文存图
-    cv2.imshow('frame', gray)
+    imshow(gray)
     i += 1
+
+short_pointUV = ginput(1)
+short_pointUV = np.array(short_pointUV, dtype=np.double)
+print("short_pointUV: ", short_pointUV)
 
 cv2.waitKey(0)
 cap.release()
