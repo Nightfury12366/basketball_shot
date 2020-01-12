@@ -4,8 +4,8 @@ from PIL import Image
 from pylab import *
 
 # path = r'E:/mywork/6月/frame/'
-cap = cv2.VideoCapture('C:/Users/64426/Desktop/ball_line/单人投篮 00_00_34-00_00_37_out.avi')
-i = 1
+cap = cv2.VideoCapture('C:/Users/64426/Desktop/seuGraph Project/ball_line/单人投篮 00_02_41-00_02_44_out.avi')
+i = 2
 # if not os.path.exists(path):
 #     os.makedirs(path)
 
